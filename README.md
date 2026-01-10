@@ -1,4 +1,4 @@
-# BananaFin
+#Aurorix-Saigon
 
 A template, building custom bootc operating system images based on the lessons from [Universal Blue](https://universal-blue.org/) and [Bluefin](https://projectbluefin.io). I called it BananaFin. because it combines Project Banana & Aurora, with the base of Bluefin.
 
