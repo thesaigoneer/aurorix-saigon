@@ -12,27 +12,6 @@ This template uses the **multi-stage build architecture** from , combining resou
 
 ## Love Your Image? Let's Go to Production
 
-Ready to take your custom OS to production? Enable these features for enhanced security, reliability, and performance:
-
-### Production Checklist
-
-- [ ] **Enable Image Signing** (Recommended)
-  - Provides cryptographic verification of your images
-  - Prevents tampering and ensures authenticity
-  - See "Optional: Enable Image Signing" section above for setup instructions
-  - Status: **Disabled by default** to allow immediate testing
-
-- [ ] **Enable SBOM Attestation** (Recommended)
-  - Generates Software Bill of Materials for supply chain security
-  - Provides transparency about what's in your image
-  - Requires image signing to be enabled first
-  - To enable:
-    1. First complete image signing setup above
-    2. Edit `.github/workflows/build.yml`
-    3. Find the "OPTIONAL: SBOM Attestation" section around line 232
-    4. Uncomment the "Add SBOM Attestation" step
-    5. Commit and push
-  - Status: **Disabled by default** (requires signing first)
 
 ## Detailed Guides
 
@@ -41,59 +20,12 @@ Ready to take your custom OS to production? Enable these features for enhanced s
 - [ujust Commands](custom/ujust/README.md) - User convenience commands
 - [Build Scripts](build/README.md) - Build-time customization
 
-## Architecture
-
-This template follows the **multi-stage build architecture** from @projectbluefin/distroless, as documented in the [Bluefin Contributing Guide](https://docs.projectbluefin.io/contributing/).
-
-### Multi-Stage Build Pattern
-
-**Stage 1: Context (ctx)** - Combines resources from multiple sources:
-- Local build scripts (`/build`)
-- Local custom files (`/custom`)
-- **@projectbluefin/common** - Desktop configuration shared with Aurora
-- **@projectbluefin/branding** - Branding assets
-- **@ublue-os/artwork** - Artwork shared with Aurora and Bazzite
-- **@ublue-os/brew** - Homebrew integration
-
-**Stage 2: Base Image** - Default options:
-- `ghcr.io/ublue-os/silverblue-main:latest` (Fedora-based, default)
-- `quay.io/centos-bootc/centos-bootc:stream10` (CentOS-based alternative)
-
 ### Benefits of This Architecture
 
 - **Modularity**: Compose your image from reusable OCI containers
 - **Maintainability**: Update shared components independently
 - **Reproducibility**: Renovate automatically updates OCI tags to SHA digests
 - **Consistency**: Share components across Bluefin, Aurora, and custom images
-
-### OCI Container Resources
-
-The template imports files from these OCI containers at build time:
-
-```dockerfile
-COPY --from=ghcr.io/ublue-os/base-main:latest /system_files /oci/base
-COPY --from=ghcr.io/projectbluefin/common:latest /system_files /oci/common
-COPY --from=ghcr.io/ublue-os/brew:latest /system_files /oci/brew
-```
-
-Your build scripts can access these files at:
-- `/ctx/oci/base/` - Base system configuration
-- `/ctx/oci/common/` - Shared desktop configuration
-- `/ctx/oci/branding/` - Branding assets
-- `/ctx/oci/artwork/` - Artwork files
-- `/ctx/oci/brew/` - Homebrew integration files
-
-**Note**: Renovate automatically updates `:latest` tags to SHA digests for reproducible builds.
-
-## Local Testing
-
-Test your changes before pushing:
-
-```bash
-just build              # Build container image
-just build-qcow2        # Build VM disk image
-just run-vm-qcow2       # Test in browser-based VM
-```
 
 ## Community
 
