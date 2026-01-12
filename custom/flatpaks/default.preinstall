@@ -4,7 +4,7 @@
 # See: https://docs.flatpak.org/en/latest/flatpak-command-reference.html#flatpak-preinstall
 
 # Internet
-[Flatpak Preinstall io.github.ungoogled_software.ungoogled_chromium]
+[Flatpak Preinstall com.vivaldi.Vivaldi]
 Branch=stable
 
 [Flatpak Preinstall io.gitlab.librewolf-community]
