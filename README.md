@@ -71,6 +71,15 @@ After that you'll be left with my choice. And don't forget:
 
     - in the cli run 'ujust aurora-cli'  # for all your additional cli bling and functionality
 
+## Shoutout and big thanks to: 
+        
+    Jorge Castro and the whole UniversalBlue community, for making all this possible and available
+
+    The crew @AuroraLinux for making this great spin on KDE
+
+--------------
+
+
 ## Final remarks
 
 Feel free to use this build and configs as you like. 
