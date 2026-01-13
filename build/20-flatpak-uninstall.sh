@@ -2,4 +2,5 @@
 set -oue pipefail
 
 echo "Running custom setup..."
-flatpak remove flathub org.kde.kclock -y
+flatpak remove org.kde.kclock -y
+flatpak remove io.github.flattool.Warehouse -y
