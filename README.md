@@ -8,7 +8,7 @@ I called it Aurorix-Saigon, bcs the hard work has been done with Aurora already 
 
 This is way more flexible and better for everyone since the image-agnostic and desktop things from Bluefin live in @projectbluefin/common. 
 
-Instead, I created my own OS repository based on this template and the latest version of Aurora, allowing full customization while leveraging Bluefin's robust build system and shared components.
+Instead, I created my own OS repository based on this template and the **latest version of Aurora**, allowing full customization while leveraging Bluefin's robust build system and shared components.
 
 > ### Be the one who moves, not the one who is moved
 
@@ -40,41 +40,33 @@ So, check out the following files to see what has changed, removed and added:
 
 The last two commands will brew your cli apps and nerd fonts so they are ready to use.
 
-    # Modern cli apps that will be installed:                     # Fonts that will be added:
-    "bat"        # cat with syntax highlighting                   "font-fira-code-nerd-font" 
-    "eza"        # Modern replacement for ls                      "font-jetbrains-mono-nerd-font"
-    "fd"         # Simple, fast alternative to find               "font-meslo-lg-nerd-font"
-    "fzf"        # fuzzy finder                                   "font-ubuntu-nerd-font"
-    "rg"         # ripgrep - faster grep                          "font-source-code-pro"
-    "yazi"       # filemanager  
+    # Modern cli apps that will be installed:                   # Fonts that will be added:
+    bat        # cat with syntax highlighting                   font-fira-code-nerd-font 
+    eza        # Modern replacement for ls                      font-jetbrains-mono-nerd-font
+    fd         # Simple, fast alternative to find               font-meslo-lg-nerd-font
+    fzf        # fuzzy finder                                   font-ubuntu-nerd-font
+    rg         # ripgrep - faster grep                          font-source-code-pro
+    yazi       # filemanager  
 
     # Development tools
-    "git"        # Git version control
-    "micro"      # editor
-    "vim"        # need I say more
+    git        # Git version control
+    micro      # editor
+    vim        # need I say more
 
     # Shell enhancements  
-    "starship"   # Cross-shell prompt
-    "zoxide"     # Smarter cd command
+    starship   # Cross-shell prompt
+    zoxide     # Smarter cd command
 
     # Utilities
-    "btop"       # Interactive process viewer
-    "mc"         # Midnight Commander
-    "tmux"       # Terminal multiplexer
+    btop       # Interactive process viewer
+    mc         # Midnight Commander
+    tmux       # Terminal multiplexer
 
-## Detailed Guides
-- [Homebrew/Brewfiles](custom/brew/README.md) - Runtime package management
-- [Flatpak Preinstall](custom/flatpaks/README.md) - GUI application setup
-- [ujust Commands](custom/ujust/README.md) - User convenience commands
-- [Build Scripts](build/README.md) - Build-time customization
+Obviously you can brew a lot more, remove casks or pour more. Remove or add flatpaks through Bazaar. These additions are just a quick headstart!
 
-## Community
+## Final remarks
+Feel free to use this build and configs as you like. 
 
-- [Universal Blue Discord](https://discord.gg/WEu6BdFEtp)
-- [bootc Discussion](https://github.com/bootc-dev/bootc/discussions)
+I do not, however, imply any form of support or ongoing maintenance. And of course, you use them entirely at your own risk.
 
-## Learn More
-
-- [Universal Blue Documentation](https://universal-blue.org/)
-- [bootc Documentation](https://containers.github.io/bootc/)
-
+Having said that, I do hope you enjoy Aurorix-Saigon!
