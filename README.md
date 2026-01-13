@@ -1,6 +1,7 @@
 # Aurorix-Saigon
 
-A template, building custom bootc operating system images based on the lessons from [Universal Blue](https://universal-blue.org/) and [Bluefin](https://projectbluefin.io). I called it Aurorix-Saigon, bcs the hard work has been done with Aurora already and all my spins have Asterix & Obelix inspired names..
+A template, building custom bootc operating system images based on the lessons from [Universal Blue](https://universal-blue.org/) and [Bluefin](https://projectbluefin.io). 
+I called it Aurorix-Saigon, bcs the hard work has been done with Aurora already and all my spins have Asterix & Obelix inspired names..
 
 This template uses the **multi-stage build architecture** from , combining resources from multiple OCI containers for modularity and maintainability.
 
@@ -24,7 +25,7 @@ So, check out the following files to see what has changed, removed and added:
 
 ### First install
 
-    Install Aurora by using the available iso at https://getaurora.dev/en
+    **Install Aurora by using the available iso at https://getaurora.dev/en**
 
 
 ## Detailed Guides
