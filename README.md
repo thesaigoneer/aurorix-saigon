@@ -15,8 +15,10 @@ So, check out the following files to see what has changed, removed and added:
     /build/10-build.sh:                    edited base applications of Aurora
     
     /custom/brew/default.Brewfile:         adjusted the default applications
+
+    /custom/brew/fonts.Brewfile            enabling nerdfonts
     
-    /custom/flatpaks/default.preinstall    all flatpaks that will be installed at first login
+    /custom/flatpaks/default.preinstall    flatpaks to be installed at first login
 
 ## Love Your Image? Let's Go to Production
 
