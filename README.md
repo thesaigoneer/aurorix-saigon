@@ -18,9 +18,13 @@ Check out the following files to see what has changed, removed and added:
 
 ## How to Get There
 
-### First install
+### Initial install
 
     - Install Aurora by using the available iso at https://getaurora.dev/en
+
+### First login
+
+    - When asked to enable SecureBoot and enroll the key use the passphrase 'universalblue'
 
 ### Rebase to Aurorix
 
