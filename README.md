@@ -12,16 +12,16 @@ This template uses the **multi-stage build architecture** from , combining resou
 
 So, check out the following files to see what has changed, removed and added:
 
-    /build/10-build.sh:                    removing a number of applications I personally don't need or want
+    /build/10-build.sh:                    edited base applications of Aurora
     
-    /custom/brew/default.Brewfile:         added a number of cli applications to install after first login
+    /custom/brew/default.Brewfile:         adjusted the default applications
     
     /custom/flatpaks/default.preinstall    all flatpaks that will be installed at first login
 
 ## Love Your Image? Let's Go to Production
 
 ## Detailed Guides
-
+l
 - [Homebrew/Brewfiles](custom/brew/README.md) - Runtime package management
 - [Flatpak Preinstall](custom/flatpaks/README.md) - GUI application setup
 - [ujust Commands](custom/ujust/README.md) - User convenience commands
