@@ -76,6 +76,13 @@ After that you'll be left with my choice. And don't forget:
 
     - in the cli run 'ujust aurora-cli'  # for all your additional cli bling and functionality
 
+### Hostname setting
+By default your image is rolled with the hostname 'aurora'. Obviously I adjust that, this is how:
+
+    sudo hostnamectl set-hostname aurorix-saigon
+
+Where I use 'aurorix-saigon' you can fill in your own preference and change it.
+
 ## Shoutout and big thanks to: 
         
     Jorge Castro and the whole UniversalBlue community, for making all this possible and available
