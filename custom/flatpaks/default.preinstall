@@ -4,7 +4,7 @@
 # See: https://docs.flatpak.org/en/latest/flatpak-command-reference.html#flatpak-preinstall
 
 # Internet
-[Flatpak Preinstall com.vivaldi.Vivaldi]
+[Flatpak Preinstall io.github.ungoogled_software.ungoogled_chromium]
 Branch=stable
 
 [Flatpak Preinstall io.gitlab.librewolf-community]
@@ -20,7 +20,7 @@ Branch=stable
 [Flatpak Preinstall org.kde.gwenview]
 Branch=stable
 
-[Flatpak Preinstall org.libreoffice.LibreOffice]
+[Flatpak Preinstall org.onlyoffice.desktopeditors]
 Branch=stable
 
 [Flatpak Preinstall org.kde.okular]
